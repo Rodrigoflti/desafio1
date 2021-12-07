@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-12-07T11:25:38.863Z",
-    "end": "2021-12-07T11:26:11.229Z",
-    "duration": 32366,
+    "start": "2021-12-07T11:26:06.066Z",
+    "end": "2021-12-07T11:26:35.024Z",
+    "duration": 28958,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "a5874917-752a-4e34-915d-f454e374a030",
+      "uuid": "e894e559-2803-4648-a794-1d0e02990f1c",
       "title": "",
       "fullFile": "cypress/integration/cadastro.spec.js",
       "file": "cypress/integration/cadastro.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "7da8dcae-1707-46ad-9ff1-9652624ec25b",
+          "uuid": "58210d9c-0b91-4f70-968f-e2a4de2fe26f",
           "title": "Cadastro",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Quando informo os dados e finalizo, o cadastro deve ser efetuado ",
               "fullTitle": "Cadastro Quando informo os dados e finalizo, o cadastro deve ser efetuado ",
               "timedOut": null,
-              "duration": 27910,
+              "duration": 23325,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit('http://automationpractice.com'); //Clicar no botão de login \ncy.get('.login').click(); //Verifica se a paina contém o texto authentication para confirmar que a pagina foi redirecionada   \ncy.contains('Authentication').should('be.visible'); //Verificação de email \ncy.get('#email_create').type(chance.email());\ncy.get('#SubmitCreate').click(); //inicio do cadastro   \n//Seleciona o radio com valor =1 \ncy.get('[type=\"radio\"]').check(\"1\");\ncy.get('input#customer_firstname').type(chance.first());\ncy.get('input#customer_lastname').type(chance.last());\ncy.get('input#passwd').type('A123menos');\ncy.get('#days').select('10');\ncy.get('#months').select('January');\ncy.get('#years').select('2019');\ncy.get('#newsletter').check();\ncy.get('input#firstname').type(chance.first());\ncy.get('input#lastname').type(chance.last());\ncy.get('input#company').type(\"Google SA \");\ncy.get('input#address1').type(chance.address());\ncy.get('input#address2').type(\"Complemento\");\ncy.get('input#city').type(chance.city());\ncy.get('select#id_state').select('Arizona');\ncy.get('input#postcode').type(\"12222\"); //cy.get('select#id_country').select()\ncy.get('#other').type('Sem informações');\ncy.get('input#phone').type(chance.phone());\ncy.get('input#phone_mobile').type(chance.phone());\ncy.get('input#alias').type('Batman'); //Submetendo os dados para inserção\ncy.get('#submitAccount').click(); //Verifica se a pagina atual contem a informação de My account, garantindo que o cadastro foi executado \ncy.contains(' My account').should('be.visible');",
               "err": {},
-              "uuid": "87d12362-699e-45c3-bab1-75b843fad770",
-              "parentUUID": "7da8dcae-1707-46ad-9ff1-9652624ec25b",
+              "uuid": "9831505f-1c08-45d5-bc1f-0bcfc7c52253",
+              "parentUUID": "58210d9c-0b91-4f70-968f-e2a4de2fe26f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "87d12362-699e-45c3-bab1-75b843fad770"
+            "9831505f-1c08-45d5-bc1f-0bcfc7c52253"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 27910,
+          "duration": 23325,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
